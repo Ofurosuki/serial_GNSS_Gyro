@@ -6,10 +6,10 @@ if you have not installed boost library yet, visit https://boostjp.github.io/how
 
 ## build & run
 execute
-'''
+```
 g++ -I /path/to/your/boost/dir/boost_1_84_0/include/ main.cpp -o Main
-'''
+```
 and then
-'''
+```
 sudo ./Main
-'''
+```
