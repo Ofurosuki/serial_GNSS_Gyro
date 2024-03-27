@@ -24,7 +24,7 @@ Make sure that you run the program as admin.
 in the main function, change port name for your environment.
 ```cpp
     // GNSS_0
-    port_1.open("/dev/ttyACM0");//here
+    port_1.open("/dev/ttyACM0");//here for Windows, type like "COM4"
     port_1.set_option(boost::asio::serial_port_base::baud_rate(115200));
     int count_1 = 0;
 
