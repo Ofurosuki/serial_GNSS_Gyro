@@ -2,6 +2,7 @@
 serial communication for GNSS and Gyro.
 
 ## install 
+Download this repository
 ```
 git clone https://github.com/Ofurosuki/serial_GNSS_Gyro.git
 ```
