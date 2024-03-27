@@ -2,6 +2,9 @@
 serial communication for GNSS and Gyro.
 
 ## install 
+```
+git clone https://github.com/Ofurosuki/serial_GNSS_Gyro.git
+```
 if you have not installed boost library yet, visit https://boostjp.github.io/howtobuild.html and follow the instrunctions.
 
 ## build & run
