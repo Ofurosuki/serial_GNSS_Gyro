@@ -34,7 +34,7 @@ in the main function, change port name for your environment.
     port.set_option(boost::asio::serial_port_base::baud_rate(115200));
 ```
 ### sample
-In the loop function you can see all variables(altitude,latitude,longitude,roll,pitch,yaw) can be used.
+In the function loop, you can see all variables(altitude,latitude,longitude,roll,pitch,yaw) can be used. It prints all variables to terminal every one second.
 ```cpp
 void loop(double &pitch, double &roll, double &yaw,double *latitude, double *longitude, double *altitude){
     while(true){
