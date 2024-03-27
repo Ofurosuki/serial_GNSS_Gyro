@@ -35,3 +35,17 @@ in the main function, change port name for your environment.
 ```
 ### sample
 In the loop function you can see all variables(altitude,latitude,longitude,roll,pitch,yaw) can be used.
+```cpp
+void loop(double &pitch, double &roll, double &yaw,double *latitude, double *longitude, double *altitude){
+    while(true){
+        std::cout<<"Pitch: "<<pitch<<" Roll: "<<roll<<" Yaw: "<<yaw<<std::endl;
+        std::cout<<"N_0: "<<latitude[0]<<" E_0: "<<longitude[0]<<" geoid_0: "<< altitude[0]<<std::endl;
+        std::cout<<"N_1: "<<latitude[1]<<" E_1: "<<longitude[1]<<" geoid_1: "<< altitude[1]<<std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    }
+
+
+}
+```
+
+
