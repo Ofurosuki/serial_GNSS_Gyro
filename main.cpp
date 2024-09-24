@@ -1,7 +1,9 @@
-#include "GNSS.hpp"
 #include <boost/asio.hpp>
 
-int main(){
-    double pitch, roll, yaw=0;
-    GNSS gnss1("/dev/ttyUSB0",pitch,roll,yaw);
+#include "GNSS.hpp"
+
+int main() {
+  double pitch, roll, yaw = 0;
+  GNSS gnss1("/dev/ttyUSB0", roll, pitch, yaw);
+  while (true) printf("Pitch: %f, Roll: %f, Yaw: %f\n", pitch, roll, yaw);
 }
