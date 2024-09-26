@@ -1,10 +1,9 @@
-#ifndef GNSS_HPP
-#define GNSS_HPP
+#ifndef GYRO_HPP
+#define GYRO_HPP
 #include <boost/asio.hpp>
-class GNSS {
+class Gyro {
  public:
-  GNSS(std::string portname, double& lattitude, double& longitude,
-       double& altitude);
+  Gyro(std::string portname, double& roll, double& pitch, double& yaw);
   void read_data();
   void set_baud_rate(int baud_rate);
   void set_timer_interval(int timer_interval);
@@ -16,9 +15,9 @@ class GNSS {
   // static std::mutex mtx;
 
  private:
-  double* lattitude;
-  double* longitude;
-  double* altitude;
+  double* roll;
+  double* pitch;
+  double* yaw;
   std::thread th;
   boost::asio::io_service io;
   boost::asio::serial_port port;
